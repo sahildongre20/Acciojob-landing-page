@@ -47,8 +47,9 @@ nav ul li{
     top: 65px;
 }
 .hero-section{
-    margin-top: 50px;
+    margin-top: 150px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 .hero-col-1{
     margin-top: 50px;
@@ -193,6 +194,7 @@ nav ul li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 .course-text{
     color: var(--primary-clr);
@@ -476,11 +478,9 @@ line-height: 150%;
     .hero-arrow{
         display: none !important;
     }
-    .hero-col-2{
-        scale: 0.7;
+    .card{
         width: 100%;
-        margin-left:80px;
-        margin-bottom: 10px;
+        margin-top: 30px;
     }
     .partners img{
         width: 100px;
@@ -507,7 +507,7 @@ line-height: 150%;
     .perks-card-container{
             width: 90%;
             padding: 0;
-            margin: 0;
+            margin: auto;
         align-items: center;
         display: flex;
 
@@ -538,12 +538,33 @@ line-height: 150%;
     .hero-col-2{
         margin:auto;
         align-items: center;
+        width: 100%;
+    }
+    .hero-col-2 h2{
+        font-size: 1em;
+    }
+    .card{
+        width: 100%;
+    }
+    .card input, .buttons{
+        padding: 5px;
+    }
+    .hero-desc{
+        margin: auto;
+    }
+    .course-card{
+        width: 90%;
+        margin: 40px auto;
+    }
+    .course-container{
+        width: 100%;
+    }
+    .test-card{
+        margin: auto;
     }
   
 }
 @media screen and (min-width: 850px  ){
-     
-    
     .grid{
     grid-template-columns: 1fr 1fr  ;
     grid-template-areas: 
@@ -553,7 +574,8 @@ line-height: 150%;
     .test-card{
         scale:1;
     }
-}
+   
+    }
 @media screen and (min-width: 1200px    ){
      
     .grid{
@@ -563,4 +585,22 @@ line-height: 150%;
     "card-1 card-2 card-3"
     "card-4 card-2 card-6"
     "card-4 card-5 card-6"; }
-}
+}   
+
+@media screen and (max-width: 1000px    ){
+    
+    .hero-section{
+        display: block;
+    }
+    .hero-col-1{
+        width: 100%;
+    }
+    .hero-col-2{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+   
+}   
+
