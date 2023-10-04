@@ -11,7 +11,6 @@
 
 body{
     font-family: ABeeZee, sans-serif;
-
 }
 nav{
     background-color: var(--light-clr);
@@ -189,7 +188,7 @@ nav ul li{
 }
 .course-container {
     width: 70%;
-    margin:100px  auto;
+    margin:50px  auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,5 +299,40 @@ tr:last-child{
     margin-bottom: 20px;
 }
 .course-card{
+    margin-top: 100px;
+}
+.partners-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.placement button{
+    border-radius: 8px;
+    background: var(--primary-clr);
+    color: var(--light-clr);
+    font-size: 1.125rem;
+    font-style: italic;
+    
+}
+
+.partners img{
+    width: 170px;
+    height: 50px;
+}
+.partner-text h2{
+    font-size: 2.625rem;
+    font-style: italic;
+}
+.partner-text p:first-child, h2 span{
+    color: var(--primary-clr);
+    font-style: italic;
+}
+.partner-text p:last-child{
+    color: var(--gray-dark-clr);
+    font-size: 1.125rem;
+}
+.partner-text p:first-child{
+    font-size: 1.125rem;
     margin-top: 100px;
 }
