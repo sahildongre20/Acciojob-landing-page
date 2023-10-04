@@ -48,7 +48,7 @@ nav ul li{
 }
 .hero-section{
     margin-top: 50px;
-    height: 100vh;  
+    flex-wrap: wrap;
 }
 .hero-col-1{
     margin-top: 50px;
@@ -218,6 +218,10 @@ nav ul li{
     flex:1;
     border-radius: 10px;
     padding: 10px;
+    transition: all 0.2s ease-in;
+}
+.course-card:hover{
+        box-shadow:  0 0 20px  2px var(--primary-clr) !important;
 }
 .beginner{
     position: relative;
@@ -302,6 +306,20 @@ tr:last-child{
     border-radius: 8px;
     margin-bottom: 20px;
     border: 2px solid var(--primary-clr);
+    transition: all 0.3s ease-in;
+}
+button{
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    opacity: 0.8;
+}
+.partners-container img{
+    transition: all 0.2s ease-in;
+}
+.partners-container img:hover{
+    scale: 1.1;
+    filter: drop-shadow(0 0 10px var(--primary-clr));
 }
 .buttons button{
     background-color: var(--primary-clr);
@@ -358,16 +376,11 @@ tr:last-child{
 }
 .grid{
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: repeat(200px ,4) !important;
-    grid-template-areas: 
-    "card-1 card-2 card-3"
-    "card-1 card-2 card-3"
-    "card-4 card-2 card-6"
-    "card-4 card-5 card-6";
     gap: 20px;
     margin-top: 60px;
 }
+
+
 .wall-of-love{
     margin-top: 100px !important;
 }
@@ -378,31 +391,10 @@ tr:last-child{
     padding-inline: 20px;
     padding-top: 20px;
     box-sizing: border-box;
+    scale: 0.8;
     border: 2px solid #D7D7D7;
-
-}
-.card-1{
-    grid-area: card-1;
-}
-.card-2{
-    grid-area: card-2;
 }
 
-.card-3{
-    grid-area: card-3;
-}
-
-.card-4{
-    grid-area: card-4;
-}
-
-.card-5{
-    grid-area: card-5;
-}
-
-.card-6{
-    grid-area: card-6;
-}
 .test-detail{
     display: flex;
     justify-content: space-between;
@@ -453,4 +445,122 @@ line-height: 150%;
 .wall-text p{
     font-size: 1.125rem;
     color: var(--gray-dark-clr);
+}
+
+
+@media  screen and (max-width: 350px) {
+    .hr-s{
+        margin-top: 100px !important;
+    }
+    :root{
+        font-size: 10px ;
+    }
+    .made-by{
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: px;
+    }
+    .perks-card-container{
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+    }
+    .perk-card{
+        width: 100%;
+        margin: auto;
+    }
+    .perk-card:first-child{
+        margin: 0;
+    }
+    .hero-arrow{
+        display: none !important;
+    }
+    .hero-col-2{
+        scale: 0.7;
+        width: 100%;
+        margin-left:80px;
+        margin-bottom: 10px;
+    }
+    .partners img{
+        width: 100px;
+    }
+
+    .test-card{
+        scale: 0.7;
+        margin-left: -50px;
+    }
+    
+}
+@media screen and (min-width: 351px) and (max-width: 849px){
+     
+    .hero-col-1{
+        text-align: center;
+    }
+    .hero-col-1 h1{
+        text-align: center;
+        font: 1em;  
+    }
+    .hero-col-2{
+        margin: auto;
+    }
+    .perks-card-container{
+            width: 90%;
+            padding: 0;
+            margin: 0;
+        align-items: center;
+        display: flex;
+
+    }
+    .perk-card:first-child{
+        margin: 0;
+    }
+    .perk-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .hr-s{
+        margin-top: 150px !important;
+    }
+    .grid{
+    grid-template-columns: 1fr   ;
+    }
+    .hero-arrow{
+        display: none !important;
+    }
+    .made-by{
+        margin: auto;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .hero-col-2{
+        margin:auto;
+        align-items: center;
+    }
+  
+}
+@media screen and (min-width: 850px  ){
+     
+    
+    .grid{
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-areas: 
+    "card-1 card-2 "
+    "card-3 card-4"
+    "card-5 card-6 "; }
+    .test-card{
+        scale:1;
+    }
+}
+@media screen and (min-width: 1200px    ){
+     
+    .grid{
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3"
+    "card-4 card-2 card-6"
+    "card-4 card-5 card-6"; }
 }
