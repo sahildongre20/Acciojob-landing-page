@@ -597,7 +597,7 @@ line-height: 150%;
     .test-card{
         margin: auto;
     }
-  
+   
 }
 @media screen and (min-width: 850px  ){
     .grid{
@@ -609,7 +609,7 @@ line-height: 150%;
     .test-card{
         scale:1;
     }
-   
+    
     }
 @media screen and (min-width: 1200px    ){
      
@@ -623,7 +623,9 @@ line-height: 150%;
 }   
 
 @media screen and (max-width: 1000px    ){
-    
+    .new-batch{
+        margin-top: 10px;
+    }
     .hero-section{
         display: block;
     }
