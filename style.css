@@ -45,6 +45,7 @@ nav ul li{
     align-items: center;
     font-style: italic;
     top: 65px;
+    margin-top: 0px;
 }
 .hero-section{
     margin-top: 150px;
@@ -512,6 +513,9 @@ line-height: 150%;
         width: 100%;
     
     }
+    .new-batch{
+        top: 55px !important;
+    }
     
 }
 @media screen and (min-width: 351px) and (max-width: 849px){
@@ -599,6 +603,17 @@ line-height: 150%;
     }
    
 }
+@media screen and (max-width: 767px  ){
+   
+}
+@media screen and (max-width: 315px  ){
+    .logo-bar img{
+        width: 60px !important;
+    }
+    .new-batch{
+        top: 40px !important;
+    }
+}
 @media screen and (min-width: 850px  ){
     .grid{
     grid-template-columns: 1fr 1fr  ;
@@ -623,9 +638,7 @@ line-height: 150%;
 }   
 
 @media screen and (max-width: 1000px    ){
-    .new-batch{
-        margin-top: 10px;
-    }
+
     .hero-section{
         display: block;
     }
@@ -638,8 +651,17 @@ line-height: 150%;
     .card{
         width: 100%;
     }
+    .new-batch{
+        top:75px
+    }
    
 }   
+@media screen and (max-width:770px) {
+    .new-batch{
+        top:65px;
+    }
+    
+}
 
 .card-1 {
     grid-area: card-1;
